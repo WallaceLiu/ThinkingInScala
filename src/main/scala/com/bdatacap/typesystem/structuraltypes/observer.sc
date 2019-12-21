@@ -1,5 +1,5 @@
 // src/main/scala/progscala2/typesystem/structuraltypes/Observer.sc
-import progscala2.typesystem.structuraltypes.Subject
+import com.bdatacap.typesystem.structuraltypes.Subject
 import scala.language.reflectiveCalls
 
 object observer {                                                    // <1>

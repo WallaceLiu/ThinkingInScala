@@ -1,8 +1,8 @@
 // src/main/scala/progscala2/typesystem/higherkinded/add1.sc
 import scala.language.higherKinds
-import progscala2.typesystem.higherkinded.{Add, Reduce1}
-import progscala2.typesystem.higherkinded.Add._
-import progscala2.typesystem.higherkinded.Reduce1._
+import com.bdatacap.typesystem.higherkinded.{Add, Reduce1}
+import com.bdatacap.typesystem.higherkinded.Add._
+import com.bdatacap.typesystem.higherkinded.Reduce1._
 
 def sum[T : Add, M[_] : Reduce1](container: M[T]): T =
     implicitly[Reduce1[M]].reduce(container)(implicitly[Add[T]].add(_,_))

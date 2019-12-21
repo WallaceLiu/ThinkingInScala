@@ -1,6 +1,6 @@
 // src/main/scala/progscala2/typesystem/higherkinded/add-seq.sc
-import progscala2.typesystem.higherkinded.Add              // <1>
-import progscala2.typesystem.higherkinded.Add._
+import com.bdatacap.typesystem.higherkinded.Add              // <1>
+import com.bdatacap.typesystem.higherkinded.Add._
 
 def sumSeq[T : Add](seq: Seq[T]): T =                      // <2>
   seq reduce (implicitly[Add[T]].add(_,_))

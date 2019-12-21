@@ -1,6 +1,6 @@
 // src/main/scala/progscala2/traits/ui/button-count-observer.sc
-import progscala2.traits.ui._
-import progscala2.traits.observer._
+import com.bdatacap.traits.ui._
+import com.bdatacap.traits.observer._
 
 class ButtonCountObserver extends Observer[Button] {
   var count = 0

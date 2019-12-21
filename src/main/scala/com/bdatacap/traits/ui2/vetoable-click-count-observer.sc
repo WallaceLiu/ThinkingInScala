@@ -1,6 +1,6 @@
 // src/main/scala/progscala2/traits/ui2/vetoable-click-count-observer.sc
-import progscala2.traits.ui2._
-import progscala2.traits.observer._
+import com.bdatacap.traits.ui2._
+import com.bdatacap.traits.observer._
 
 // No override of "click" in Button required.
 val button =
