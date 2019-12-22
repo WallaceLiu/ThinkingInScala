@@ -7,6 +7,7 @@ val button = new Button("Click Me!") with ObservableClicks
 
 class ClickCountObserver extends Observer[Clickable] {
   var count = 0
+
   def receiveUpdate(state: Clickable): Unit = count += 1
 }
 

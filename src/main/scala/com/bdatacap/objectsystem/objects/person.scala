@@ -7,13 +7,14 @@ class Person(val name: String, val age: Int) {
 
 object Person {
   def apply(name: String, age: Int) = new Person(name, age)
+
   def unapply(person: Person) = Some((person.name, person.age))
 
   def main(args: Array[String]) = {
     // Test the constructor...
     val person = new Person("Buck Trends", 21)
     assert(person.name == "Buck Trends")
-    assert(person.age  == 21)
+    assert(person.age == 21)
   }
 }
 

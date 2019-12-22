@@ -3,7 +3,8 @@ package com.bdatacap.introscala
 
 object Upper {
   def main(args: Array[String]) = {
-    args.map(_.toUpperCase()).foreach(printf("%s ", _))
+    val strArr = Array("a", "b", "c")
+    strArr.map(_.toUpperCase()).foreach(printf("%s ", _))
     println("")
   }
 }
