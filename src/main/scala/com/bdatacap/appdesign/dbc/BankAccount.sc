@@ -41,3 +41,4 @@ println(
      |After credit of $$5.0: $ba2
      |After debit of $$8.5: $ba3
      |After debit of $$10.0: $ba4""".stripMargin)
+
